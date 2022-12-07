@@ -7,7 +7,7 @@ namespace ThirdPersonShooter
 		private void Awake()
 		{
 			if(!Application.isEditor)
-				Destroy(this);
+				Destroy(gameObject);
 		}
 	}
 }
