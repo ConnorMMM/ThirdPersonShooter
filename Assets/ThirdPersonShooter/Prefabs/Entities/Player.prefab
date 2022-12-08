@@ -234,11 +234,12 @@ MonoBehaviour:
   stats:
     maxHealth: 10
     speed: 5
-    range: 5
+    range: 8
     damage: 1
     attackRate: 0.25
   pauseAction: {fileID: 4516089764463790383, guid: e9e92a22c6f6ac546bfe1fa37f697baa, type: 3}
   input: {fileID: 4109931547420551545}
+  weapon: {fileID: 8289437715684905281}
   hurtSource: {fileID: 2513755111945668280}
   deathSource: {fileID: 8804182780572224719}
 --- !u!54 &4679008040900207006
@@ -359,6 +360,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8409334495136404682}
+  - component: {fileID: 8289437715684905281}
   m_Layer: 3
   m_Name: Weapon
   m_TagString: Player
@@ -380,6 +382,21 @@ Transform:
   m_Father: {fileID: 4915047902822266459}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8289437715684905281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4744711777553491944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bf7c7027f604c068ed4f130f5bae6d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shootAction: {fileID: -6309922647197643045, guid: e9e92a22c6f6ac546bfe1fa37f697baa, type: 3}
+  shootPoint: {fileID: 5426475310538541149}
+  bulletLine: {fileID: 1450533085002021415, guid: f6542397f05c23a489eaac6fe04f76c2, type: 3}
 --- !u!1 &4928984276913090956
 GameObject:
   m_ObjectHideFlags: 0
@@ -1443,7 +1460,7 @@ Animator:
   m_GameObject: {fileID: 5426475310538576949}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: f1d84cc28597f5641a3d9cbc4df7e306, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 689e832c746e9e749b06b933e30c8dc4, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1

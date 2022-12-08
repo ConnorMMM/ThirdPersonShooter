@@ -603,6 +603,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1547997022569026563}
   - component: {fileID: 1547997022559157161}
+  - component: {fileID: 2359238056175464117}
   m_Layer: 0
   m_Name: Zombunny
   m_TagString: Untagged
@@ -636,7 +637,7 @@ Animator:
   m_GameObject: {fileID: 1547997022568663075}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: be66986effd141b4992d2d78be127139, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bb008fc7c89419f42863f93463edeff3, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -645,6 +646,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2359238056175464117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547997022568663075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74582924a7d5485a8969c59fe3c0caa4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sinkTime: 1.2
+  sinkAmount: 1
+  parent: {fileID: 6698325401940494968}
 --- !u!1 &1547997022568663081
 GameObject:
   m_ObjectHideFlags: 0
@@ -1304,6 +1320,18 @@ PrefabInstance:
     - target: {fileID: 8052444398800575821, guid: b826a6d308d0fc349babce137ac48b4d, type: 3}
       propertyPath: m_AgentTypeID
       value: -334000983
+      objectReference: {fileID: 0}
+    - target: {fileID: 8647516544236636612, guid: b826a6d308d0fc349babce137ac48b4d, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1547997022559157161}
+    - target: {fileID: 8647516544236636612, guid: b826a6d308d0fc349babce137ac48b4d, type: 3}
+      propertyPath: stats.range
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8647516544236636612, guid: b826a6d308d0fc349babce137ac48b4d, type: 3}
+      propertyPath: stats.maxHealth
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9122257972168786653, guid: b826a6d308d0fc349babce137ac48b4d, type: 3}
       propertyPath: m_RootOrder

@@ -601,6 +601,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3086040134797345302}
   - component: {fileID: 3086040134805040572}
+  - component: {fileID: 5817963007530897232}
   m_Layer: 0
   m_Name: ZomBear
   m_TagString: Untagged
@@ -634,7 +635,7 @@ Animator:
   m_GameObject: {fileID: 3086040134797647414}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: c236aa7ad6dcabe47abc7d2cf903ae71, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bb008fc7c89419f42863f93463edeff3, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -643,6 +644,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5817963007530897232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3086040134797647414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74582924a7d5485a8969c59fe3c0caa4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sinkTime: 1.2
+  sinkAmount: 1
+  parent: {fileID: 1336756170903277167}
 --- !u!1 &3086040134797647416
 GameObject:
   m_ObjectHideFlags: 0
@@ -1302,6 +1318,26 @@ PrefabInstance:
     - target: {fileID: 8052444398800575821, guid: b826a6d308d0fc349babce137ac48b4d, type: 3}
       propertyPath: m_AgentTypeID
       value: 1479372276
+      objectReference: {fileID: 0}
+    - target: {fileID: 8647516544236636612, guid: b826a6d308d0fc349babce137ac48b4d, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 3086040134805040572}
+    - target: {fileID: 8647516544236636612, guid: b826a6d308d0fc349babce137ac48b4d, type: 3}
+      propertyPath: stats.range
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8647516544236636612, guid: b826a6d308d0fc349babce137ac48b4d, type: 3}
+      propertyPath: stats.speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8647516544236636612, guid: b826a6d308d0fc349babce137ac48b4d, type: 3}
+      propertyPath: stats.damage
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8647516544236636612, guid: b826a6d308d0fc349babce137ac48b4d, type: 3}
+      propertyPath: stats.attackRate
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 9122257972168786653, guid: b826a6d308d0fc349babce137ac48b4d, type: 3}
       propertyPath: m_RootOrder

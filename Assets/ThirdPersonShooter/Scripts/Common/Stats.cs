@@ -30,5 +30,17 @@ namespace ThirdPersonShooter
 			Health = maxHealth;
 			SpeedModifier = 1.0f;
 		}
+
+		public void TakeDamage(float _damageAmount)
+		{
+			if(Health <= 0)
+				return;
+
+			Health -= _damageAmount;
+			onHealthChanged?.Invoke(Health);
+			
+			if(Health <= 0)
+				onDeath?.Invoke();
+		}
 	}
 }

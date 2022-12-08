@@ -67,7 +67,14 @@ namespace ThirdPersonShooter.Entities.Player
 
 		private void OnLookPerformed(InputAction.CallbackContext _context)
 		{
-			transform.Rotate(Vector3.up, _context.ReadValue<float>() * sensitivity);
+			if(!GameManager.IsValid())
+			{
+				transform.Rotate(Vector3.up, _context.ReadValue<float>() * sensitivity);
+				return;
+			}
+			
+			if(!GameManager.Instance.IsPaused)
+				transform.Rotate(Vector3.up, _context.ReadValue<float>() * sensitivity);
 		}
 	}
 }

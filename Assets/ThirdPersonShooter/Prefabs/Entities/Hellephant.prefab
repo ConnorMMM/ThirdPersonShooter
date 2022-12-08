@@ -796,6 +796,7 @@ GameObject:
   m_Component:
   - component: {fileID: 923007762181172447}
   - component: {fileID: 923007762171577147}
+  - component: {fileID: 1106307800500181146}
   m_Layer: 0
   m_Name: Hellephant
   m_TagString: Untagged
@@ -829,7 +830,7 @@ Animator:
   m_GameObject: {fileID: 923007762181075199}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: b77f122f451a2394898a24191c26107c, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 22100000, guid: c5953dfdb747f684fa52a08adcb3410c, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -838,6 +839,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1106307800500181146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 923007762181075199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74582924a7d5485a8969c59fe3c0caa4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sinkTime: 1.5
+  sinkAmount: 2
+  parent: {fileID: 1632792188693683741}
 --- !u!1001 &7507521001455230144
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -851,7 +867,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3255344532391262871, guid: b826a6d308d0fc349babce137ac48b4d, type: 3}
       propertyPath: m_Radius
-      value: 1.7
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3255344532391262871, guid: b826a6d308d0fc349babce137ac48b4d, type: 3}
       propertyPath: m_Center.y
@@ -868,6 +884,34 @@ PrefabInstance:
     - target: {fileID: 8052444398800575821, guid: b826a6d308d0fc349babce137ac48b4d, type: 3}
       propertyPath: m_AgentTypeID
       value: -1372625422
+      objectReference: {fileID: 0}
+    - target: {fileID: 8647516544236636612, guid: b826a6d308d0fc349babce137ac48b4d, type: 3}
+      propertyPath: value
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8647516544236636612, guid: b826a6d308d0fc349babce137ac48b4d, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 923007762171577147}
+    - target: {fileID: 8647516544236636612, guid: b826a6d308d0fc349babce137ac48b4d, type: 3}
+      propertyPath: stats.range
+      value: 1.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8647516544236636612, guid: b826a6d308d0fc349babce137ac48b4d, type: 3}
+      propertyPath: stats.speed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8647516544236636612, guid: b826a6d308d0fc349babce137ac48b4d, type: 3}
+      propertyPath: stats.damage
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8647516544236636612, guid: b826a6d308d0fc349babce137ac48b4d, type: 3}
+      propertyPath: stats.maxHealth
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8647516544236636612, guid: b826a6d308d0fc349babce137ac48b4d, type: 3}
+      propertyPath: stats.attackRate
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9122257972168786653, guid: b826a6d308d0fc349babce137ac48b4d, type: 3}
       propertyPath: m_RootOrder
