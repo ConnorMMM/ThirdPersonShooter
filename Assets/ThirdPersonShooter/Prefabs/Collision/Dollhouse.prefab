@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 873813603096919711}
   - component: {fileID: 873813603090560167}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54,7 +54,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8774445346267919709}
   - component: {fileID: 8774445346267919706}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8774445346491686587}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Dollhouse
   m_TagString: Untagged
   m_Icon: {fileID: 0}

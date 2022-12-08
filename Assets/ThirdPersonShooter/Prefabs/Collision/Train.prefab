@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 756029383940146843}
   - component: {fileID: 756029383946795487}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54,7 +54,7 @@ GameObject:
   m_Component:
   - component: {fileID: 756029383940142731}
   - component: {fileID: 756029383937131275}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,7 +98,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9194252442254677331}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Train
   m_TagString: Untagged
   m_Icon: {fileID: 0}

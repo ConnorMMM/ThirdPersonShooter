@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1011799391581638548}
   - component: {fileID: 1011799391583589168}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53,7 +53,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1688802529335719735}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Clock
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -50,7 +50,7 @@ namespace ThirdPersonShooter.UI
 
 		private void UpdateText()
 		{
-			volumeText.text = $"{sliderName}: {Mathf.RoundToInt(slider.value.Remap(MIN_VALUE, MAX_VALUE, 0, 100)):000)}%";
+			volumeText.text = $"{sliderName}: {Mathf.RoundToInt(slider.value.Remap(MIN_VALUE, MAX_VALUE, 0, 100)):000}%";
 		}
 	}
 }

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3424912862406656473}
   - component: {fileID: 3424912862400729393}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54,7 +54,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3424912862406683041}
   - component: {fileID: 3424912862400278527}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,7 +98,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3424912862406649167}
   - component: {fileID: 3424912862400684181}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -141,7 +141,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8192145187033650687}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Doll Arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}

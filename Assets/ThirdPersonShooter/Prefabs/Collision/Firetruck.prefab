@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2109322544244642184}
   - component: {fileID: 2109322544238038154}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54,7 +54,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2109322544244669012}
   - component: {fileID: 2109322544238558440}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,7 +98,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2109322544244685528}
   - component: {fileID: 2109322544238070032}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -142,7 +142,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2109322544244641354}
   - component: {fileID: 2109322544238046472}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -185,7 +185,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7539218154702123322}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Firetruck
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 474595505613576734}
   - component: {fileID: 474595505613576704}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53,7 +53,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 474595507216460075}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Drawers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86,7 +86,7 @@ GameObject:
   m_Component:
   - component: {fileID: 474595507270717431}
   - component: {fileID: 474595507270717432}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}

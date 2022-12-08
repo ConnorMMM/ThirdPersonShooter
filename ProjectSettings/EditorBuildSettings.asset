@@ -4,6 +4,15 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/ThirdPersonShooter/Scenes/Production/Persistent.unity
+    guid: 8b47cf2887d0390418673a78580b55d5
+  - enabled: 1
+    path: Assets/ThirdPersonShooter/Scenes/Production/UI.unity
+    guid: dcdd26ad412d8b54c8c5abd25993624d
+  - enabled: 1
+    path: Assets/ThirdPersonShooter/Scenes/Production/Gameplay.unity
+    guid: 5667e4049d61b76429c4e7c623112e86
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 6a1ed4aff80e7a34692557859dfd8c39, type: 2}
