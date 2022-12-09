@@ -22,6 +22,7 @@ namespace ThirdPersonShooter.Entities.AI
 
 		[Header("Components")]
 		[SerializeField] private Animator animator;
+		[SerializeField] private new SkinnedMeshRenderer renderer;
 		[SerializeField] private AudioSource hurtSource;
 		[SerializeField] private AudioSource deathSource;
 
@@ -60,12 +61,16 @@ namespace ThirdPersonShooter.Entities.AI
 
 		private void Update()
 		{
+			float distToPlayer = Vector3.Distance(player.Position, transform.position);
+			float intensity = (Mathf.Pow(distToPlayer / 7, 6) + 4);
+			renderer.materials[1].SetColor("_EmissionColor", Color.red * intensity);
+			
 			if(isPlayerDead || skipPathfinding || !collider.enabled)
 				return;
-
+			
 			agent.SetDestination(player.Position);
 
-			if(Vector3.Distance(player.Position, transform.position) < stats.Range)
+			if(distToPlayer < stats.Range)
 			{
 				if(!isAttakCooling)
 				{

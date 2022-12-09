@@ -39,7 +39,14 @@ namespace ThirdPersonShooter.Entities.AI
 		{
 			player = GameManager.IsValid() ? GameManager.Instance.Player : FindObjectOfType<PlayerEntity>();
 
+			player.Stats.onDeath += OnPlayerDeath;
+			
 			StartCoroutine(SpawnLoop_CR());
+		}
+
+		private void OnDestroy()
+		{
+			player.Stats.onDeath -= OnPlayerDeath;
 		}
 
 		private IEnumerator SpawnLoop_CR()
@@ -52,6 +59,11 @@ namespace ThirdPersonShooter.Entities.AI
 				if(canSpawn)
 					Spawn();
 			}
+		}
+
+		private void OnPlayerDeath()
+		{
+			canSpawn = false;
 		}
 
 		private void OnDrawGizmos()

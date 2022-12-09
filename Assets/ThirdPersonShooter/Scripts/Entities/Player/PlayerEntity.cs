@@ -10,6 +10,9 @@ namespace ThirdPersonShooter.Entities.Player
 	public class PlayerEntity : MonoBehaviour, IEntity
 	{
 		public ref Stats Stats => ref stats;
+		
+		public ref Weapon Weapon => ref weapon;
+		
 		public Vector3 Position => transform.position;
 
 		public Action<int> onScoreUpdated;
@@ -22,7 +25,7 @@ namespace ThirdPersonShooter.Entities.Player
 		[SerializeField] private Weapon weapon;
 		[SerializeField] private AudioSource hurtSource;
 		[SerializeField] private AudioSource deathSource;
-
+		
 		private int score;
 
 		public void AddScore(int _value)

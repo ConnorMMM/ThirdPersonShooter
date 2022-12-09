@@ -271,7 +271,7 @@ CapsuleCollider:
   m_Radius: 0.45
   m_Height: 1.38
   m_Direction: 1
-  m_Center: {x: 0.11, y: 0.68, z: 0}
+  m_Center: {x: 0, y: 0.68, z: 0}
 --- !u!1 &3874167393485902584
 GameObject:
   m_ObjectHideFlags: 0
@@ -395,6 +395,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shootAction: {fileID: -6309922647197643045, guid: e9e92a22c6f6ac546bfe1fa37f697baa, type: 3}
+  reloadAction: {fileID: -8523323484312557804, guid: e9e92a22c6f6ac546bfe1fa37f697baa, type: 3}
   shootPoint: {fileID: 5426475310538541149}
   bulletLine: {fileID: 1450533085002021415, guid: f6542397f05c23a489eaac6fe04f76c2, type: 3}
 --- !u!1 &4928984276913090956

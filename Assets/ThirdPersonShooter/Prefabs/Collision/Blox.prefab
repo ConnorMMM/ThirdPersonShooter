@@ -59,7 +59,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5501614306125461863}
   m_LocalRotation: {x: -0, y: -0.2270189, z: -0, w: 0.97389036}
-  m_LocalPosition: {x: -11.905133, y: 0.82506, z: -7.334462}
+  m_LocalPosition: {x: -11.905133, y: 1.29, z: -7.334462}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4160435769286925831}
@@ -76,7 +76,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.2033085, y: 0.71891785, z: 1.7802515}
+  m_Size: {x: 1.2033085, y: 1.7189178, z: 1.7802515}
   m_Center: {x: -0.5177709, y: -0.4975314, z: 1.1876689}
 --- !u!1 &5501614306125475381
 GameObject:
@@ -103,7 +103,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5501614306125475381}
   m_LocalRotation: {x: -0, y: -0.44245708, z: -0, w: 0.89678967}
-  m_LocalPosition: {x: -7.360093, y: 0.82506, z: -11.456358}
+  m_LocalPosition: {x: -7.360093, y: 1.317, z: -11.456358}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4160435769286925831}
@@ -120,7 +120,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.7587826, y: 0.71891785, z: 2.4066749}
+  m_Size: {x: 1.7587826, y: 1.7189178, z: 2.4066749}
   m_Center: {x: -0.239985, y: -0.4975314, z: 0.874447}
 --- !u!1 &5501614306125476397
 GameObject:
@@ -147,7 +147,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5501614306125476397}
   m_LocalRotation: {x: -0, y: 0.15575433, z: -0, w: 0.9877959}
-  m_LocalPosition: {x: -10.588002, y: 0.82506, z: -5.9508586}
+  m_LocalPosition: {x: -10.588002, y: 1.03, z: -5.9508586}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4160435769286925831}
@@ -164,7 +164,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.7619405, y: 1.2230682, z: 1.1947615}
+  m_Size: {x: 4.7619405, y: 1.523068, z: 1.1947615}
   m_Center: {x: 1.203792, y: -0.24545622, z: 0.26845035}
 --- !u!1 &5501614306125666119
 GameObject:

@@ -1297,7 +1297,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3255344532391262871, guid: b826a6d308d0fc349babce137ac48b4d, type: 3}
       propertyPath: m_Radius
-      value: 0.58
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 3255344532391262871, guid: b826a6d308d0fc349babce137ac48b4d, type: 3}
       propertyPath: m_Center.y
@@ -1323,6 +1323,10 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 3086040134805040572}
+    - target: {fileID: 8647516544236636612, guid: b826a6d308d0fc349babce137ac48b4d, type: 3}
+      propertyPath: renderer
+      value: 
+      objectReference: {fileID: 3086040134809211772}
     - target: {fileID: 8647516544236636612, guid: b826a6d308d0fc349babce137ac48b4d, type: 3}
       propertyPath: stats.range
       value: 1.2

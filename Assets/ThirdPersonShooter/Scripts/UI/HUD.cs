@@ -14,6 +14,7 @@ namespace ThirdPersonShooter.UI
 		private PlayerEntity player;
 
 		[SerializeField] private Slider healthBar;
+		[SerializeField] private TextMeshProUGUI bulletCountText;
 		[SerializeField] private TextMeshProUGUI scoreText;
 
 		public override void OnOpenMenu(UIManager _manager)
@@ -22,11 +23,13 @@ namespace ThirdPersonShooter.UI
 
 			player.Stats.onHealthChanged += OnHealthChanged;
 			player.Stats.onDeath += OnPlayerDied;
+			player.Weapon.onBulletCountUpdate += OnBulletCountUpdated;
 			player.onScoreUpdated += OnScoreUpdated;
 
 			healthBar.maxValue = player.Stats.MaxHealth;
 			healthBar.value = player.Stats.Health;
 
+			bulletCountText.text = "x12";
 			scoreText.text = "Score: 0";
 		}
 
@@ -41,6 +44,8 @@ namespace ThirdPersonShooter.UI
 
 		private void OnPlayerDied() => UIManager.ShowMenu("Game Over");
 
+		private void OnBulletCountUpdated(int _bulletCount) => bulletCountText.text = $"x{_bulletCount}";
+		
 		private void OnScoreUpdated(int _score) => scoreText.text = $"Score: {_score}";
 	}
 }

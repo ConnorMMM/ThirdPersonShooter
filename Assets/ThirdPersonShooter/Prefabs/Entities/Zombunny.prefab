@@ -1299,7 +1299,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3255344532391262871, guid: b826a6d308d0fc349babce137ac48b4d, type: 3}
       propertyPath: m_Radius
-      value: 0.66
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3255344532391262871, guid: b826a6d308d0fc349babce137ac48b4d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3255344532391262871, guid: b826a6d308d0fc349babce137ac48b4d, type: 3}
       propertyPath: m_Center.y
@@ -1318,6 +1322,10 @@ PrefabInstance:
       value: 0.66
       objectReference: {fileID: 0}
     - target: {fileID: 8052444398800575821, guid: b826a6d308d0fc349babce137ac48b4d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8052444398800575821, guid: b826a6d308d0fc349babce137ac48b4d, type: 3}
       propertyPath: m_AgentTypeID
       value: -334000983
       objectReference: {fileID: 0}
@@ -1325,6 +1333,10 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 1547997022559157161}
+    - target: {fileID: 8647516544236636612, guid: b826a6d308d0fc349babce137ac48b4d, type: 3}
+      propertyPath: renderer
+      value: 
+      objectReference: {fileID: 1547997022563452265}
     - target: {fileID: 8647516544236636612, guid: b826a6d308d0fc349babce137ac48b4d, type: 3}
       propertyPath: stats.range
       value: 1.2

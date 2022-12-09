@@ -14,12 +14,16 @@ namespace ThirdPersonShooter.Entities.Player
 {
 	public class Weapon : MonoBehaviour
 	{
+		public Action<int> onBulletCountUpdate;
+		
 		[SerializeField] private InputActionReference shootAction;
+		[SerializeField] private InputActionReference reloadAction;
 		[SerializeField] private Transform shootPoint;
 		[SerializeField] private BulletLine bulletLine;
 
 		[CanBeNull] private IEntity player;
 
+		private int bulletCount = 12;
 		private bool canShoot = true;
 
 		public void SetPlayer(IEntity _player) => player = _player;
@@ -28,18 +32,29 @@ namespace ThirdPersonShooter.Entities.Player
 		{
 			if(player != null && canShoot && shootAction.action.IsDown())
 			{
-				bool didHit = Physics.Raycast(shootPoint.position, shootPoint.forward, out RaycastHit hit, player.Stats.Range);
-
-				if(didHit && hit.collider.TryGetComponent(out EnemyEntity entity))
+				if(bulletCount > 0)
 				{
-					entity.Stats.TakeDamage(player.Stats.Damage);
+					bulletCount--;
+				
+					bool didHit = Physics.Raycast(shootPoint.position, shootPoint.forward, out RaycastHit hit, player.Stats.Range);
+
+					if(didHit && hit.collider.TryGetComponent(out EnemyEntity entity))
+					{
+						entity.Stats.TakeDamage(player.Stats.Damage);
+					}
+
+					BulletLine newLine = Instantiate(bulletLine);
+					newLine.Play(shootPoint.position, didHit ? hit.point : shootPoint.position + shootPoint.forward * player.Stats.Range, didHit);
+					onBulletCountUpdate?.Invoke(bulletCount);
 				}
 
-				BulletLine newLine = Instantiate(bulletLine);
-				newLine.Play(shootPoint.position, didHit ? hit.point : shootPoint.position + shootPoint.forward * player.Stats.Range, didHit);
 				StartCoroutine(ShootCooldown_CR());
 			}
 		}
+
+		private void OnEnable() => reloadAction.action.performed += OnReloadPerformed;
+
+		private void OnDisable() => reloadAction.action.performed -= OnReloadPerformed;
 
 		private IEnumerator ShootCooldown_CR()
 		{
@@ -49,6 +64,12 @@ namespace ThirdPersonShooter.Entities.Player
 				yield return new WaitForSeconds(player.Stats.AttackRate);
 
 			canShoot = true;
+		}
+
+		private void OnReloadPerformed(InputAction.CallbackContext _context)
+		{
+			bulletCount = 12;
+			onBulletCountUpdate?.Invoke(bulletCount);
 		}
 	}
 }
